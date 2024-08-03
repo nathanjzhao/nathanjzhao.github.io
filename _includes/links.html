@@ -1,0 +1,18 @@
+<ul class="list-inline">
+  {% if include.home %}
+  <li class="list-inline-item"><a id="home-link" href="{{ '/' | relative_url }}">Home</a></li>
+  {% endif %}
+  {% if include.about %}
+  <li class="list-inline-item"><a id="dir-link" href="{{ '/about' | relative_url }}">About</a></li>
+  {% endif %}
+  {% if site.usernames.github %}
+  <li class="list-inline-item">
+    <a id="github-link" href="https://github.com/{{ site.usernames.github }}">Github</a>
+  </li>
+  {% endif %}
+  {% if site.usernames.twitter %}
+  <li class="list-inline-item">
+    <a id="twitter-link" href="https://twitter.com/{{ site.usernames.twitter }}">Twitter</a>
+  </li>
+  {% endif %}
+</ul>

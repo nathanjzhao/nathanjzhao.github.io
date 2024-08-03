@@ -1,0 +1,81 @@
+# Setup
+title: Nathan's Blog
+url: "https://nathanjzhao.github.io"
+baseurl: "/"
+description: "A blog about things."
+
+# Contact
+owner: Nathan Zhao
+email: nathanzh@stanford.edu
+calendar: https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=WEEK&showTitle=0&showNav=1&showDate=0&showTabs=0&showCalendars=0&showPrint=0&src=Ymtib2x0ZTE4QGdtYWlsLmNvbQ&color=%2333B679
+
+usernames:
+  github: nathanjzhao
+  twitter: nathanzhaoo
+
+# Sass
+sass:
+  sass_dir: assets/css/sass
+
+# Other
+markdown: kramdown
+kramdown:
+  math_engine_opts:
+    preview: true
+    preview_as_code: true
+permalink: :title
+
+katex:
+  rendering_options:
+    throw_error: true
+
+# Analytics
+analytics:
+  facebook: 559228364939475
+
+feed:
+  path: /blog/feed.xml
+  tags:
+    path: "/blog/feed/tagged/"
+  posts_limit: 10
+  excerpt_only: true
+  disable_in_development: true
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-katex
+  - jekyll-feed
+
+whitelist:
+  - jekyll-redirect-from
+
+compress_html:
+  clippings: all
+  comments: [""]
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+collections:
+  my_tags:
+    output: true
+    permalink: /tagged/:slug/
+defaults:
+  -
+    scope:
+      path: ""
+      type: my_tags
+    values:
+      layout: tagged
+  -
+    scope:
+      path: "assets/"
+    values:
+      image: true
+
+exclude:
+- README.md
+- LICENSE
+- vendor

@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+
+{% include head.html %}
+
+<main>
+
+    {% include header.html %}
+
+    {% if page.tags %}
+    <nav style="margin-top: 1em; margin-bottom: 1em;">
+        {% assign sorted_tags = page.tags | sort %}
+        {% for tag in sorted_tags %}
+        <a href="{{ 'tagged/' | relative_url }}{{ tag }}">#{{ tag }}</a>
+        {% endfor %}
+    </nav>
+    {% endif %}
+
+    {% include arrows.html %}
+
+    <hr />
+
+    <h1>{{ page.title }}</h1>
+    {% if page.excerpt %}<h4 class="subtitle">{{ page.excerpt }}</h4>{% endif %}
+    <i>{{ page.date | date: "%b %d, %Y" }}</i>
+
+    <div id="blog-contents">
+        {{ page.content }}
+    </div>
+
+    <hr />
+
+    {% include arrows.html %}
+
+    {% if page.no_comments %}
+    {% else %}
+    {% if page.draft %}
+    <div>Draft doesn't have comments enabled.</div>
+    {% else %}
+    <script src="https://utteranc.es/client.js" repo="nathanjzhao/nathanjzhao.github.io" issue-term="pathname"
+        theme="github-light" crossorigin="anonymous" async></script>
+    {% endif %}
+    {% endif %}
+
+</main>
+
+{% include footer-post.html %}
+
+</body>
+
+</html>

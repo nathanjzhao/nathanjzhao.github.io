@@ -1,0 +1,26 @@
+<footer>
+  <div style="margin-top: 1em;">
+    <div class="highlight">
+      <pre class="highlight"><code class="citation">@article{
+    title    = "{{ page.title }}",
+    journal  = "{{ site.title }}",
+    author   = "Nathan Zhao",
+    year     = "{{ page.date | date: "%Y" }}",
+    month    = "{{ page.date | date: "%m" }}",
+    url      = "{{ page.url | absolute_url }}",
+}</code></pre>
+    </div>
+  </div>
+
+  <div style="margin-top: 1em;">
+    <a style="margin-left: 1em" href="{{ '/blog/feed.xml' | relative_url }}">RSS</a>
+    {% assign sorted_tags = page.tags | sort %}
+    {% for tag in sorted_tags %}
+    <a style="margin-left: 1em" href="{{ '/blog/feed/tagged/' | relative_url }}{{ tag }}.xml">#{{ tag }}</a>
+    {% endfor %}
+  </div>
+
+  <script type="text/javascript" src="{{ '/assets/js/copy-code-blocks.js' | relative_url }}" defer></script>
+  <script type="text/javascript" src="{{ '/assets/js/collapse-code-blocks.js' | relative_url }}" defer></script>
+  <script type="text/javascript" src="{{ '/assets/js/table-of-contents.js' | relative_url }}" defer></script>
+</footer>

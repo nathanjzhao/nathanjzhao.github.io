@@ -1,0 +1,16 @@
+_site/
+.sass-cache/
+
+# weird os / ide things
+*~
+.DS_Store
+*.swp
+
+# jekyll stuff
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+Gemfile.lock
+
+_preserve/
