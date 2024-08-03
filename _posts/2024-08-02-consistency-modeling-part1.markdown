@@ -43,7 +43,7 @@ Of course, at $t=0$, $\phi_0(x)$ follows a Gaussian distribution such that $\sig
 The derivative of this *flow* $\phi$ defines a vector field. We want to train with this instead of the function for flow itself because this is what our model actually applies to each point as it applies changes to some initial point $x$.
 {% endkatexmm %}
 
-So, here's a checkpoint, in case everything above was a bit quick:[^1]
+So, here's a checkpoint: in case everything above was a bit quick:[^1]
 - We can define the path we want each point in our noise to take
 - If we make it lienar, its easier to do in less steps (no overshooting or undershooting)
 - Now can we learn this path?
