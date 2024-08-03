@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Consistency Modeling From Scratch pt. 1"
+title: "Minimum Consistency Models pt. 1"
 tags: [ml, math]
 excerpt: >
-  A minimum implementation of consistency models
+  A minimum implementation of consistency models from scratch
 ---
 
 This is an elaboration upon a talk I gave at K-Scale Labs with these [slides](https://docs.google.com/presentation/d/18dlGr7veUm9JJdOz9r6l0rRYYDlzWDRs6uF6lraZs3w/edit?usp=sharing) and this [GitHub repo](https://github.com/kscalelabs/min-consistency-models)
@@ -71,4 +71,4 @@ Now, we have flow matching! But spoilers: we still have to iterate our model man
 
 ![steps_figure](/images/consistency-modeling/steps_figure.webp)
 
-[^1]: You may also be wondering why I just assumed we can have one datapoint to have as our "goal image." Read [this paper](https://arxiv.org/pdf/2210.02747) for more details (specifically Theorem 2), but basically, with a lot of measure theory, it turns out that the loss function for learning this path between noise to just one image is the same as the loss function for learning the path between noise to a whole dataset of images. In order words, optimizing the path for each image with the same model ends up optimizing the model's overall path for guiding the initial noise.
+[^1]: You may also be wondering why I just assumed we can have one datapoint to have as our "goal image." Read [this paper](https://arxiv.org/pdf/2210.02747) for more details (specifically Theorem 2), but basically, with a lot of integrals and rearrangements, it turns out that the loss function for learning this path between noise to just one image is the same as the loss function for learning the path between noise to a whole dataset of images. In order words, optimizing the path for each image with the same model ends up optimizing the model's overall path for guiding the initial noise.
