@@ -13,3 +13,5 @@ bundle exec jekyll serve --drafts --incremental
 ```
 
 See Jekyll install instructions [here](https://jekyllrb.com/docs/installation/).
+
+Original template from [codekansas](https://github.com/codekansas)
