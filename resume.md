@@ -3,7 +3,7 @@ layout: default
 title: Nathan Zhao's Resume
 ---
 
-Stanford undergraduate that has been doing machine learning since middle school. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up modeltraining/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin] or shoot me an [email][mail-link].
+Stanford undergraduate that has been doing machine learning since middle school. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin], or shoot me an [email][mail-link].
 
 ## Work History
 
@@ -18,7 +18,7 @@ Stanford undergraduate that has been doing machine learning since middle school.
 
 - Developing deep learning model from scratch with Pytorch and Weights & Biases to find Right Ventricular insertion points for applying American Heart Association Segmentation model on cDTI MRI images. Created annotation system with AWS S3.
 
-### **Jane Street ** 
+### **Jane Street** 
 *Mar. 2024*
 
 - One of 100 students selected for quantitative trading training through manual trading games, achieving 1st among all teams.
@@ -29,8 +29,8 @@ Stanford undergraduate that has been doing machine learning since middle school.
 ### **Stanford University, School of Engineering**
 *Sep. 2023 – May 2026*
 
-- Relevant Coursework: Transformers United V3, Computer Organization & Systems, Polya Problem Solving Seminar, Modern Mathematics: Discrete Methods, Introduction to Probability Theory, Applied Matrix Theory, Machine Learning, Design and Analysis of Algorithms, Deep Learning for Computer Vision, Natural Language Processing with Deep Learning
-- Research Conferences: American Physics Society March Meeting, MIT Undergraduate Technology Research Conference, Society of Engineering Science Annual Technical Meeting, Sigma Xi Student Research Conference
+- **Relevant Coursework:** Computer Organization & Systems, Polya Problem Solving Seminar, Modern Mathematics: Discrete Methods, Introduction to Probability Theory, Applied Matrix Theory, Machine Learning, Design and Analysis of Algorithms, Deep Learning for Computer Vision, Natural Language Processing with Deep Learning
+- **Research Conferences:** American Physics Society March Meeting, MIT Undergraduate Technology Research Conference, Society of Engineering Science Annual Technical Meeting, Sigma Xi Student Research Conference
 
 ## Skills
 
