@@ -18,7 +18,7 @@ Personally, I have been content with this "missing out." Not applying to jobs as
 
 Of course, this "job application season" is an analogy to all other things I should take seriously. Whether college applications, my standardized tests, or other processes that feel rather systemic and nonconstructive instead of fulfilling. Luckily, my life path has turned out okay by a little luck and my vague intuition to level into doing these systemic things when there is nothing better to do (because yes, these systemic things are obviously still important).
 
-That being said, I've never wanted to change this casual attitude towards systemic things, aside from the slight "huh. interesting"'s when the world seems to favor people who would rather spend more time saying they are experts rather than actually getting to learning they apparently know. To some extent, I may have *too* strong of a sense of self for my own good.
+That being said, I've never wanted to change this casual attitude towards systemic things, aside from the slight "huh. interesting"'s when the world seems to favor people who would rather spend more time saying they are experts rather than actually getting to learning what they proclaim to know. 
 
 ## Change
 
