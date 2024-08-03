@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Consistency Modeling From Scratch: Part 1"
+title: "Consistency Modeling From Scratch pt. 1"
 tags: [ml, math]
 excerpt: >
   A minimum implementation of consistency models
