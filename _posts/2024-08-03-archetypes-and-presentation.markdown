@@ -20,4 +20,6 @@ I aspire to find a meta-archetype, a way to present myself not as someone who do
 
 This ties into the broader question of [being serious](/being-serious). So, what does this entail? Yes, I am engaged in state-of-the-art MRI reconstruction research. Yes, I have numerous hobby projects with the potential to become products. Yes, I am implementing and parallelizing machine learning models from scratch at a startup. Yes, I have the capacity to found a startup, work at a quant firm, or be a proficient software engineer, while also pursuing my other passions.
 
-Interestingly, if I were serious, this would be an excellent inadvertent way to highlight my achievements. Perhaps I could maintain this as my most recent blog post and adjust the dates of my other posts. The commit history is the ultimate truth. After all, who doesn't appreciate a creative use of rhetoric? If you don't tell people who you are, who will?
+Interestingly, if I were serious, this would be an excellent inadvertent way to highlight my achievements. Perhaps I could maintain this as my most recent blog post and adjust the dates of my other posts.[^1] The commit history is the ultimate truth. After all, who doesn't appreciate a creative use of rhetoric?
+
+[^1]: [being serious](/being-serious) was made August 2nd, and this post was made August 3rd. Those (so far) were the only few dates I've changed because it would seem peculiar if I were posting all at once.

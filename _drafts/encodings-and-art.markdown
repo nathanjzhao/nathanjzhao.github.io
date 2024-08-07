@@ -6,3 +6,4 @@ excerpt: >
   Art and literature as a continuous, rather than discrete, encoding of humanity
 ---
 
+Suppose 

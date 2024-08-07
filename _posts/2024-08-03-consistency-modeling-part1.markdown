@@ -6,9 +6,9 @@ excerpt: >
   A minimum implementation of consistency models from scratch
 ---
 
-This is an elaboration upon a talk I gave at K-Scale Labs with these [slides](https://docs.google.com/presentation/d/18dlGr7veUm9JJdOz9r6l0rRYYDlzWDRs6uF6lraZs3w/edit?usp=sharing) and this [GitHub repo](https://github.com/kscalelabs/min-consistency-models)
+This is an elaboration upon a talk I gave at [K-Scale Labs](https://www.ycombinator.com/companies/k-scale-labs) with these [slides](https://docs.google.com/presentation/d/18dlGr7veUm9JJdOz9r6l0rRYYDlzWDRs6uF6lraZs3w/edit?usp=sharing) and this [GitHub repo](https://github.com/kscalelabs/min-consistency-models).
 
-This blog would likely be most informative as a refresher to diffusion/flow matching, while providing interesting intuition for why all the pieces come together as they do. Or you can try reading this very slowly.
+Diffusion models and flow matching have been very impactful fields of recent years, and this post serves as hopefully a useful introduction. However, this will focus on more of the computer science than math, and will primarily hand-wave over a lot of the deeper theorems that require a lot more proving to reach the final goal.
 
 ## Papers + Resources
 Some sources to look for more insight + math:
@@ -65,7 +65,7 @@ As we have defined $\sigma_t(x_1)$ and $\mu_t(x_1)$, we can substitute everythin
 
 Thus, we can now train a model that learns this path. First, we can generate noise and define the path we want it to take. Over many timestamps, we want it to reach a goal image from our dataset. So we train our model to learn its own vector field to turn noise into these goal images over these timestamps, minimizing the difference between predicted vector field and our pre-defined vector field.
 
-Now, we have flow matching! But spoilers: we still have to iterate our model many times in order to generate an image --- too long for practical applications in speech (and too resource-intensive for large tasks like MRI image denoising). We trained using too many timestamps! How can we train a model that requires less iterations as promised?
+Now, we have flow matching! But spoilers: we still have to iterate our model many times in order to generate an image --- too long for practical applications in speech (and too resource-intensive for large tasks like MRI image denoising). We trained using too many timestamps --- even though we have a straight line path, the model makes minor progress per timestep! How can we train a model that requires less iterations as promised?
 
 ## A sneak peak:
 
