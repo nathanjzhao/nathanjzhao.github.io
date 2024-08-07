@@ -109,7 +109,7 @@ The eloquent solution, as expected, is gates. We want $W_h$ and $W_x$ (preservin
 
 ![selection_algorithm](/images/mamba/selection_algorithm.webp)
 
-The most important thing about this algorithm is that the selecting functions and latent parameters[^3] (specifically $A$ and $B$) can be chosen such that $N=1$, $A=-1$, $B=1$, $s_\Delta = \text{Linear}(x_t)$, and $\tau_\Delta = \text{softplus}$ results in
+The most important thing about this algorithm is that the "selecting" functions and latent parameters[^3] (specifically $A$ and $B$) can be chosen such that $A=-1$, $B=1$, $s_\Delta = \text{Linear}(x_t)$, and $\tau_\Delta = \text{softplus}$ where the result is that each channel of our RNN having a gate is characterizable by
 
 $$
 \begin{aligned}
