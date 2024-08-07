@@ -3,7 +3,7 @@ layout: post
 title: "Minimum Consistency Models pt. 1"
 tags: [ml, math]
 excerpt: >
-  A minimum implementation of consistency models from scratch
+  A overview of diffusion models and flow matching models.
 ---
 
 This is an elaboration upon a talk I gave at [K-Scale Labs](https://www.ycombinator.com/companies/k-scale-labs) with these [slides](https://docs.google.com/presentation/d/18dlGr7veUm9JJdOz9r6l0rRYYDlzWDRs6uF6lraZs3w/edit?usp=sharing) and this [GitHub repo](https://github.com/kscalelabs/min-consistency-models).

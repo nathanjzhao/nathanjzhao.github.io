@@ -11,7 +11,7 @@ This is a blog post regarding a talk I gave at [K-Scale Labs](https://www.ycombi
 ## Papers + Resources
 Some sources to look for more insight + math:
 - [The Original Mamba Paper](https://arxiv.org/pdf/2312.00752)
-- [Linear RNN Paper](https://arxiv.org/abs/2303.06349)
+- [DeepMind's Linear RNN Paper](https://arxiv.org/abs/2303.06349)
 - [State Space Models from HazyResearch](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-3)
 - [HuggingFace SSM Introduction](https://huggingface.co/blog/lbourdois/get-on-the-ssm-train)
 - [An Annotated SSM Implementation](https://srush.github.io/annotated-s4/#part-1-state-space-models)

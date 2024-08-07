@@ -20,3 +20,19 @@ However, the immediate issue we see is that the image we receive from our machin
 
 
 {% endkatexmm %}
+
+- variable splitting with quadratic penalty (Solving each part of the equation)
+- split regularizer param and the MSE loss
+
+- proximal graident is solving R --> network
+- first equation is just a model, but equation characterizes what the model should be doing
+- x i-1 is network input u is network output
+
+- conjugate gradient : A^H * A = A^2 --> unroll into linear equation so solving Ax = b
+- CG better than other solvers if limited iterations
+  - better l2 norm
+  - step size dependent on A and b
+  - apply CG only if A is Hermitian
+
+- Newton's method
+- All of reconstruction has data consistency steps
