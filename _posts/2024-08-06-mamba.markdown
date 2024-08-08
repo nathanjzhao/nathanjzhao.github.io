@@ -6,7 +6,7 @@ excerpt: >
   An introduction to Mamba models: faster and better* than transformers
 ---
 
-This is a blog post regarding a talk I gave at [K-Scale Labs](https://www.ycombinator.com/companies/k-scale-labs) to help everyone understand Mamba. State Space Models (SSMs) are one of the few machine learning archetypes that are competitive 
+This is a blog post regarding a talk I gave at [K-Scale Labs](https://www.ycombinator.com/companies/k-scale-labs) to help everyone understand Mamba. State Space Models (SSMs) are one of the few machine learning archetypes that is competitive with Mamba in both inference speed and effectiveness --- not to mention, they have some pretty cool intuition!
 
 ## Papers + Resources
 Some sources to look for more insight + math:
@@ -26,7 +26,7 @@ Some sources to look for more insight + math:
 There are a few:
 - During *qkv*, calculating the attention score of each token (relative to every other) is $O(N^2)$ according to the length of the context window.
 - Further, the quadratically-growing key-value cache needs to be stored alongside the model during inference.
-- Even more, having a context window at all is rather limiting
+- Moreover, having a context window at all is rather limiting
 
 If we can address these problems with a different architecture, we can hopefully be better at long-range tasks, synthesizing speech and video (which are packed with context), training models quicker, and inference on smaller devices.
 
@@ -40,12 +40,12 @@ y(t) &= Cx(t) + Du(t)
 \end{aligned}
 $$
 
-However, we can simply interpret this as a function-to-function mapping $u(t) \mapsto y(t)$ parameterized by $A$, $B$, $C$, and $D$ (fixed "latend" parameters). Then, $x(t)$ is a latent representation satisfying the ODE. The important thing about SSMs is that they have three views:
+However, we can simply interpret this as a function-to-function mapping $u(t) \mapsto y(t)$ parameterized by $A$, $B$, $C$, and $D$ (fixed "latent" parameters). Then, $x(t)$ is a latent representation satisfying the ODE. The important aspect of SSMs is that they have three views:
 
 ![ssm_representations](/images/mamba/ssm_representations.webp)
 
 1. **Continuous:** This is simply our original equation --- a function-to-function mapping of $u(t) \mapsto y(t)$ following the equation denoted above.
-2. **Recurrent:** We can map our linear ODE to discrete steps in an RNN, with similar intuition for how we approach [Flow Matching](/consistency-modeling-part1) (see [slide 4](https://docs.google.com/presentation/d/18dlGr7veUm9JJdOz9r6l0rRYYDlzWDRs6uF6lraZs3w/edit?usp=sharing)). We essentially turn our function-to-function mapping into a sequence-to-seuqence mapping through interpolation
+2. **Recurrent:** We can map our linear ODE to discrete steps in an RNN, with similar intuition for how we approach [Flow Matching](/consistency-modeling-part1) (see [slide 4](https://docs.google.com/presentation/d/18dlGr7veUm9JJdOz9r6l0rRYYDlzWDRs6uF6lraZs3w/edit?usp=sharing)). We essentially turn our function-to-function mapping into a sequence-to-sequence mapping through interpolation
 
 $$
 \begin{aligned}
@@ -87,7 +87,7 @@ Luckily there's an associative function we can utilize for our new activiationle
 
 $$f((W_1, x_1), (W_2, x_2)) = (W_1 W_2, W_1 x_1 + x_2)$$
 
-Now, we are able to apply this function do our recurrence in $O(N\log(N))$ (we are folding in $W_h$ and $W_x$ together). *But,* there is an additional problem where we have to store $ W_i W_j \dots W_k $ during the scanning which results in a very large cubic cache. Luckily, because $ W_i \in {\rm I\!R}^{d \times d} $, we can easily diagonalize it and keep our cache quadratic. 
+Now, we are able to apply this function do our recurrence in $O(N\log(N))$ (we are folding in $W_h$ and $W_x$ together). *But,* there is an additional problem where we have to store $ W_i W_j \dots W_k $ during the scanning which results in a very large cubic cache as we have to store a $ {\rm I\!R}^{d \times d} $  matrix for each input during the Blelloch scan. Luckily, because $ W_i \in {\rm I\!R}^{d \times d} $, we can easily diagonalize these intermediate products and keep our cache quadratic.[^5]
 
 Boom! Now we have a quick and parallelizable RNN. To add nonlinearity (which we still want), we can simply add an additional layer to our RNN which is applied to the recurrent part's outputs (just like the feed forward layer after self-attention layers).
 
@@ -126,5 +126,6 @@ This provides us an intuitive gate and shows us that we are really just consider
 [^2]: Notice that the parameter $D$ is ignored because it is easily computable as a skip connection.
 [^3]: The [Mamba paper](https://arxiv.org/pdf/2312.00752) offers interesting intuition regarding each of the parameters in the **3.5.2 Interpretation of Selection Mechanisms** section.
 [^4]: It's pretty interesting to explore handware-aware understanding of runtime. There are cool optimizations such as recomputing intermediate steps during the backward pass for backpropagation in order to reduce cache size during training. Additionally, similar to FastAttention, we want to do all our heavy linear algebra (recurrence) on SRAM, where this data transfer ends up being the largest bottleneck to training speed more than the recurrence itself.
+[^5]: Something pretty cool --- $P$ and $P^{-1}$ in the diagonalization $PDP^{-1}$ are actually learned matrices to add more expressivity, while not having to worry about any matrix-inverting problems.
 
 {% endkatexmm %}
