@@ -6,7 +6,7 @@ excerpt: >
   An introduction to Mamba models: faster and better* than transformers
 ---
 
-This is a blog post regarding a talk I gave at [K-Scale Labs](https://www.ycombinator.com/companies/k-scale-labs) to help everyone understand Mamba. State Space Models (SSMs) are one of the few machine learning archetypes that is competitive with Mamba in both inference speed and effectiveness --- not to mention, they have some pretty cool intuition!
+This is a blog post regarding a talk I gave at [K-Scale Labs](https://www.ycombinator.com/companies/k-scale-labs) to help everyone understand Mamba. The slides are [here](https://docs.google.com/presentation/d/1GvF_0TNdMq17tab0drflaaeIIPm5-2RoSBlaEGEVBfo/edit?usp=sharing). State Space Models (SSMs) are one of the few machine learning archetypes that is competitive with Mamba in both inference speed and effectiveness --- not to mention, they have some pretty cool intuition!
 
 ## Papers + Resources
 Some sources to look for more insight + math:
