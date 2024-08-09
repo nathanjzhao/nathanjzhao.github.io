@@ -16,13 +16,13 @@ This is an introduction to the MRI Reconstruction problem and approaching them w
 Say we want to take an MR image quicker. This makes the patient need to spend less time in the machine and makes physiological movement (e.g. bloodflow) less disrupting to the final image. However, in order to take an MR image quicker, we have less time to fully sample the patient's anatomy in the scanner.
 
 {% katexmm %}
-Therefore, the problem of MRI reconstruction is simple: we have an undersampled MR image and we want to reconstruct what the *underlying* image is. Let us define $$\hat{y} = Ex$$ where $x$ is our the true underlying, $\hat{y}$ is the undersampled image, and $E$ is some known function that our MRI machine is doing while taking its image defined by coil sensitivity maps, Fourier transforms, and a selected sampling pattern.
+Therefore, the problem of MRI reconstruction is simple: we have an undersampled MR image and we want to reconstruct what the *underlying* image is. Let us define $$\hat{y} = Ex$$ where $x$ is our true underlying image, $\hat{y}$ is the undersampled image, and $E$ is some known function that our MRI machine is doing while taking its image defined by coil sensitivity maps, Fourier transforms, and a selected sampling pattern.
 
-Knowing $y$ and $E$, we want to find $x$. In other words, we hope to find $$\arg\min_x {||\hat{y} - Ex||}_2^2$$ to solve the ill-posed inverse problem. As with many other minimizing problems, gradient descent can solve this easily. 
+Knowing $\hat{y}$ and $E$, we want to find $x$. In other words, we hope to find $$\arg\min_x {||\hat{y} - Ex||}_2^2$$ to solve the ill-posed inverse problem. As with many other minimizing problems, gradient descent can solve this easily. 
 
 However, the immediate issue we see is that the image we receive from our machine is not exactly what we expect. Any machine will produce noise. Therefore, we must have a regularizer:
 
-$$ \arg\min_{x} \| E x - y \|_2^2 + \mathcal{R}(x) $$
+$$ \arg\min_{x} \| E x - \hat{y} \|_2^2 + \mathcal{R}(x) $$
 
 This problem is not very trivial to solve --- especially if $\mathcal{R}(u)$ is not strictly known. Existing methods, such as the TV semi-norm which evaluates $\mathbf{D}$, the finite differences approximation of the image gradient, have been useful.
 
@@ -37,7 +37,7 @@ However, this solution is limited by primarily favoring piece-wise constant solu
 
 ## Convex Optimization
 
-In order to converge upon this optimal $x$, we utilize variable splitting to unroll this algorithm into its two components. First, we have the Proximal Gradient step where we aim to minimize a regularization parameter. Second, we have the Data Consistency step, where we propose to utilize the Conjugate Gradient method for reducing the distance between $E x$ and $y$.
+In order to converge upon this optimal $x$, we utilize variable splitting to unroll this algorithm into its two components. First, we have the Proximal Gradient step where we aim to find an image that minimizes our regularization function. Second, we have the Data Consistency step, where we propose to utilize the Conjugate Gradient method for reducing the distance between $E x$ and $\hat{y}$.
 
 These algorithmic goals are visible through the following equations:
 
@@ -48,7 +48,7 @@ x^{(i)} &= \arg\min_{x} \| E x - y \|_2^2 + \mu \| u^{(i)} - x \|_2^2
 \end{aligned}
 $$
 
-Intuitively, if we can't easily find a solution to the equation by utilizing gradient descent on one variable, why not split the variable $x$ into $x$ and $u$? We emphasize these variables' have the same origin by the L2 distance in each minimizer, weighted by $\mu$ according to how much this is a priority.
+Intuitively, if we can't easily find a solution to the equation by utilizing gradient descent on one variable, why not split the variable $x$ into $x$ and $u$? We emphasize these variables are the "same" by the L2 distance in each minimizer, weighted by $\mu$ according to how much this is a priority.
 
 #### The Proximal Gradient step
 
