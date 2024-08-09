@@ -65,7 +65,7 @@ $$
 \begin{aligned}
 x^{(i)} &= \arg\min_{x} \left\| E_{\Omega} x - y \right\|_2^2 + \mu \left\| u^{(i)} - x \right\|_2^2 \\[1ex]
 &= \arg\min_{x} \left[ (E_{\Omega} x - y)^\dagger (E_{\Omega} x - y) + \mu (u^{(i)} - x)^\dagger (u^{(i)} - x) \right] \\[2ex]
-&= \arg\min_{x} \left[ x^\dagger (E_{\Omega}^\dagger E_{\Omega} + \mu I) x - (E_{\Omega}^\dagger y + \mu u^{(i)})^\dagger x - x^\dagger (E_{\Omega}^\dagger y + \mu u^{(i)}) \right] \\[2ex]
+&= \arg\min_{x} \left[ x^\dagger (E_{\Omega}^\dagger E_{\Omega} + \mu I) x - (E_{\Omega}^\dagger y + \mu u^{(i)})^\dagger x - x^\dagger (E_{\Omega}^\dagger y + \mu u^{(i)}) + \text{constant} \right] \\[2ex]
 &\Downarrow \text{Find minimizer} \\[1ex]
 \frac{\partial f(x)}{\partial x} &= 2 (E_{\Omega}^\dagger E_{\Omega} + \mu I) x - 2 (E_{\Omega}^\dagger y + \mu u^{(i)}) = 0 \\[2ex]
 &\Downarrow \text{Rearranging} \\[1ex]
