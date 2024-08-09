@@ -16,13 +16,13 @@ This is an introduction to the MRI Reconstruction problem and approaching them w
 Say we want to take an MR image quicker. This makes the patient need to spend less time in the machine and makes physiological movement (e.g. bloodflow) less disrupting to the final image. However, in order to take an MR image quicker, we have less time to fully sample the patient's anatomy in the scanner.
 
 {% katexmm %}
-Therefore, the problem of MRI reconstruction is simple: we have an undersampled MR image and we want to reconstruct what the *underlying* image is. Let us define $$\hat{y} = E_{\Omega}x$$ where $x$ is our the true underlying, $\hat{y}$ is the undersampled image, and $E$ is some known function that our MRI machine is doing while taking its image defined by coil sensitivity maps, Fourier transforms, and a selected sampling pattern.
+Therefore, the problem of MRI reconstruction is simple: we have an undersampled MR image and we want to reconstruct what the *underlying* image is. Let us define $$\hat{y} = Ex$$ where $x$ is our the true underlying, $\hat{y}$ is the undersampled image, and $E$ is some known function that our MRI machine is doing while taking its image defined by coil sensitivity maps, Fourier transforms, and a selected sampling pattern.
 
-Knowing $y$ and $E$, we want to find $x$. In other words, we hope to find $$\arg\min_x {||\hat{y} - E_{\Omega}x||}_2^2$$ to solve the ill-posed inverse problem. As with many other minimizing problems, gradient descent can solve this easily. 
+Knowing $y$ and $E$, we want to find $x$. In other words, we hope to find $$\arg\min_x {||\hat{y} - Ex||}_2^2$$ to solve the ill-posed inverse problem. As with many other minimizing problems, gradient descent can solve this easily. 
 
 However, the immediate issue we see is that the image we receive from our machine is not exactly what we expect. Any machine will produce noise. Therefore, we must have a regularizer:
 
-$$ \arg\min_{x} \| E_{\Omega} x - y \|_2^2 + \mathcal{R}(x) $$
+$$ \arg\min_{x} \| E x - y \|_2^2 + \mathcal{R}(x) $$
 
 This problem is not very trivial to solve --- especially if $\mathcal{R}(u)$ is not strictly known. Existing methods, such as the TV semi-norm which evaluates $\mathbf{D}$, the finite differences approximation of the image gradient, have been useful.
 
@@ -37,14 +37,14 @@ However, this solution is limited by primarily favoring piece-wise constant solu
 
 ## Convex Optimization
 
-In order to converge upon this optimal $x$, we utilize variable splitting to unroll this algorithm into its two components. First, we have the Proximal Gradient step where we aim to minimize a regularization parameter. Second, we have the Data Consistency step, where we propose to utilize the Conjugate Gradient method for reducing the distance between $E_{\Omega} x$ and $y$.
+In order to converge upon this optimal $x$, we utilize variable splitting to unroll this algorithm into its two components. First, we have the Proximal Gradient step where we aim to minimize a regularization parameter. Second, we have the Data Consistency step, where we propose to utilize the Conjugate Gradient method for reducing the distance between $E x$ and $y$.
 
 These algorithmic goals are visible through the following equations:
 
 $$
 \begin{aligned}
 u^{(i)} &= \arg\min_{u} \mu \| x^{(i-1)} - u \|_2^2 + \mathcal{R}(u) \\
-x^{(i)} &= \arg\min_{x} \| E_{\Omega} x - y \|_2^2 + \mu \| u^{(i)} - x \|_2^2
+x^{(i)} &= \arg\min_{x} \| E x - y \|_2^2 + \mu \| u^{(i)} - x \|_2^2
 \end{aligned}
 $$
 
@@ -63,19 +63,19 @@ In order to do solve this minimum, we can do some linear algebra with our data c
 
 $$
 \begin{aligned}
-x^{(i)} &= \arg\min_{x} \left\| E_{\Omega} x - y \right\|_2^2 + \mu \left\| u^{(i)} - x \right\|_2^2 \\[1ex]
-&= \arg\min_{x} \left[ (E_{\Omega} x - y)^\dagger (E_{\Omega} x - y) + \mu (u^{(i)} - x)^\dagger (u^{(i)} - x) \right] \\[2ex]
-&= \arg\min_{x} \left[ x^\dagger (E_{\Omega}^\dagger E_{\Omega} + \mu I) x - (E_{\Omega}^\dagger y + \mu u^{(i)})^\dagger x - x^\dagger (E_{\Omega}^\dagger y + \mu u^{(i)}) + \text{constant} \right] \\[2ex]
+x^{(i)} &= \arg\min_{x} \left\| E x - y \right\|_2^2 + \mu \left\| u^{(i)} - x \right\|_2^2 \\[1ex]
+&= \arg\min_{x} \left[ (E x - y)^\dagger (E x - y) + \mu (u^{(i)} - x)^\dagger (u^{(i)} - x) \right] \\[2ex]
+&= \arg\min_{x} \left[ x^\dagger (E^\dagger E + \mu I) x - (E^\dagger y + \mu u^{(i)})^\dagger x - x^\dagger (E^\dagger y + \mu u^{(i)}) + \text{constant} \right] \\[2ex]
 &\Downarrow \text{Find minimizer} \\[1ex]
-\frac{\partial f(x)}{\partial x} &= 2 (E_{\Omega}^\dagger E_{\Omega} + \mu I) x - 2 (E_{\Omega}^\dagger y + \mu u^{(i)}) = 0 \\[2ex]
+\frac{\partial f(x)}{\partial x} &= 2 (E^\dagger E + \mu I) x - 2 (E^\dagger y + \mu u^{(i)}) = 0 \\[2ex]
 &\Downarrow \text{Rearranging} \\[1ex]
-(E_{\Omega}^\dagger E_{\Omega} + \mu I) x &= E_{\Omega}^\dagger y + \mu u^{(i)} \\[2ex]
+(E^\dagger E + \mu I) x &= E^\dagger y + \mu u^{(i)} \\[2ex]
 &\Downarrow \text{ Solve for } x \\[1ex]
-x &= (E_{\Omega}^\dagger E_{\Omega} + \mu I)^{-1} (E_{\Omega}^\dagger y + \mu u^{(i)})
+x &= (E^\dagger E + \mu I)^{-1} (E^\dagger y + \mu u^{(i)})
 \end{aligned}
 $$
 
-Luckily, $E_{\Omega}^\dagger E_{\Omega} + \mu I$ is characteristically a positive semi-definite matrix which allows for us to apply the Conjugate Gradient method to solve this inverse equation.
+Luckily, $E^\dagger E + \mu I$ is characteristically a positive semi-definite matrix which allows for us to apply the Conjugate Gradient method to solve this inverse equation.
 
 #### Image Reconstruction
 Now that we have both parts, we just have to iterate over these steps back-and-forth to converge upon our reconstructed image!
