@@ -98,7 +98,7 @@ The solution is how we initialize our weights. If we make them very small, our g
 
 $$w = e^{-e^a}e^{ib}, e^{-e^a} \sim \text{Uniform}([0.999, 1.0]), b \sim \text{Uniform}([0, \frac{\pi}{10}]) $$
 
-On the other hand, our parameters are also very sensitive to inputs. We want to reduce their magnitude as much as possible. So, we multiple each input by $\Delta = \sqrt{1 - e^{-e^a}}$. From there, we're done! [^1]
+On the other hand, our parameters are also very sensitive to inputs. We want to reduce their magnitude as much as possible. So, we multiply each input by $\Delta = \sqrt{1 - e^{-e^a}}$. From there, we're done! [^1]
 
 
 ## Mamba

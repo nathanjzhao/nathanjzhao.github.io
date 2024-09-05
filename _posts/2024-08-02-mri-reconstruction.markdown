@@ -33,9 +33,9 @@ $$
 \end{aligned}
 $$
 
-However, this solution is limited by primarily favoring piece-wise constant solutions by nature of $\mathbf{D}$. Due to the complex structure of MR images, a more adaptive regularizer is necessary.
+However, this solution restricts the regularizer to favoring only image qualities (e.g. sparsity in image edges). Due to the complex structure of MR images, a more adaptive regularizer is necessary.
 
-## Convex Optimization
+## Convex Optimization with Variable Splitting
 
 In order to converge upon this optimal $x$, we utilize variable splitting to unroll this algorithm into its two components. First, we have the Proximal Gradient step where we aim to find an image that minimizes our regularization function. Second, we have the Data Consistency step, where we propose to utilize the Conjugate Gradient method for reducing the distance between $E x$ and $\hat{y}$.
 
@@ -78,7 +78,7 @@ $$
 Luckily, $E^\dagger E + \mu I$ is characteristically a positive semi-definite matrix which allows for us to apply the Conjugate Gradient method to solve this inverse equation.
 
 #### Image Reconstruction
-Now that we have both parts, we just have to iterate over these steps back-and-forth to converge upon our reconstructed image!
+Now that we have both parts, we just have to iterate over these steps back-and-forth to converge upon our reconstructed image! Intuitively, we are
 
 
 {% endkatexmm %}

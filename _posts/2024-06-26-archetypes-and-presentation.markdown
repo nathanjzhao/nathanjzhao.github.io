@@ -22,4 +22,4 @@ This ties into the broader question of [being serious](/being-serious). So, what
 
 Interestingly, if I were serious, this would be an excellent inadvertent way to highlight my achievements. Perhaps I could maintain this as my most recent blog post and adjust the dates of my other posts.[^1] The commit history is the ultimate truth. After all, who doesn't appreciate a creative use of rhetoric?
 
-[^1]: [being serious](/being-serious) was made 8/2, this post 8/3. Consistency modeling 8/2, Mamba 8/6, and MRI reconstruction 8/8. All the dates I've changed them to are birthdays of people I know.
+<!-- [^1]: [being serious](/being-serious) was made 8/2, this post 8/3. Consistency modeling 8/2, Mamba 8/6, and MRI reconstruction 8/8. All the dates I've changed them to are birthdays of people I know. -->
