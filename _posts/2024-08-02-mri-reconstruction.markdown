@@ -78,7 +78,7 @@ $$
 Luckily, $E^\dagger E + \mu I$ is characteristically a positive semi-definite matrix which allows for us to apply the Conjugate Gradient method to solve this inverse equation.
 
 #### Image Reconstruction
-Now that we have both parts, we just have to iterate over these steps back-and-forth to converge upon our reconstructed image! Intuitively, we are
+Now that we have both parts, we just have to iterate over these steps back-and-forth to converge upon our reconstructed image! Intuitively, this looks a lot like gradient descent, except with regularization restrictions.
 
 
 {% endkatexmm %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Minimum Consistency Models pt. 1"
+title: "Flow Matching"
 tags: [ml, math]
 excerpt: >
   A overview of diffusion models and flow matching models.
