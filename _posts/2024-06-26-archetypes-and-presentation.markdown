@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Archetypes and Presentation"
-tags: [startup, ideas]
+tags: [startup, musings]
 excerpt: >
   Discarding the cracked "Stanford CS" stereotype
 ---
