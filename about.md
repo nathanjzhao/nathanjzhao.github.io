@@ -7,7 +7,7 @@ Beyond everything software, machine learning, and applied math that I do in rese
 
 I have a few poetry publications, material science research I presented at the American Physics Society, and semifinalist/finalist placings in competitive olympiads for chemistry, biology, math, and programming.
 
-I've just created this blog and don't have much to put here yet, so enjoy a few responses to these application questions. The best way to learn about me though, I think, is to look at my [musings](/tagged/musings/) and talk to me (reach out over[email][mail-link])
+I've just created this blog and don't have much to put here yet, so enjoy a few responses to these application questions. The best way to learn about me though, I think, is to look at my [musings](/tagged/musings/) and talk to me (reach out over [email][mail-link])
 
 #### What's the nerdiest thing about you?
 
