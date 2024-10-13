@@ -22,7 +22,7 @@ That being said, I've never wanted to change this casual attitude towards system
 
 ## Change
 
-However, recently, I've been told that I need to take things more seriously by my boss, [Ben Bolte](https://github.com/codekansas) (a full introduction would be too boring, but he's also the source of this Jekyll blog template). And I'm probably going to do it. Not that I should immediately start LinkedIn-posting and delving into the system, but just, in his words, think of being less of a "postmodernist." 
+However, recently, I've been told that I need to take things more seriously by my boss, [Ben Bolte](https://github.com/codekansas) (a full introduction would be too boring, but in short, he is quite an example of Nietzche's self-transforming individual). And I'm probably going to do it. Not that I should immediately start LinkedIn-posting and delving into the system, but just, in his words, think of being less of a "postmodernist." 
 - I don't *need* to enjoy everything as much as I normally would. It should be okay to do unlikable things like cramming --- even if from an outside perspective, it's annoying, systemic, and boring.
 - I don't *need* to resist posting formal tweets or bragging on LinkedIn because it's not "me." Does tweeting with better grammar and in more complete sentences really take away from who I am? A few changes and I could reasonably have a better future.
 - I don't *need* to avoid networking events to work on my own projects just because I don't feel like "using" people. Having attended a few, they're actually interesting, and I just enjoyed the conversation.
