@@ -22,3 +22,5 @@ I also used to play video games a lot. However, I think I played so much that I 
 #### Tell us about a risk youʼve taken or a challenge you've faced. Tell us whether you failed or succeeded, how you behaved, and how you think this reflects your character.
 
 In high school, despite taking the maximum APs and college-level courses, I found classes unchallenging. So, I began focusing on personal projects such as Kaggle competitions, olympiad studies, and material science research. Prioritizing these, I often skipped school to work on side projects, nearly jeopardizing my graduation due to absences. Despite this, I graduated with As. This reflects my willingness to break social norms and drop everything to pursue personal growth and impactful projects. -->
+
+[mail-link]: mailto:nathanzh@stanford.edu
