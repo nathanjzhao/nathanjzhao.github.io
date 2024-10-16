@@ -3,7 +3,7 @@ layout: post
 title: "The Case for Humanoid Robots"
 tags: [ideas, startup]
 excerpt: >
-  Why we should work on open source humanoid robots 
+  Why we should bet on open source humanoid robots, not Figure.
 ---
 
 Working in the robotics industry, I've come across a lot of new opinions --- humanoid robotics and its recent surge in number of startups and media coverage has stirred a lot of conversation. As a result, I decided to synthesize a few ideas as a response to some of the common criticisms. 
