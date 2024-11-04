@@ -51,7 +51,7 @@ Stanford undergraduate that has been doing machine learning since middle school.
 - **Languages**: Python, Typescript, C/C++, Java, JavaScript, Swift
 - **Frameworks**: React, React Native, Django, NodeJS, Pytorch, TensorFlow
 - **Technologies**: Firebase/Firestore, GCP, AWS, Docker, Git, Redis, Apache Kafka, Electron, XCode, Android Studio, CUDA
-- **Awards**: Google Company Challenge 2nd @ LAHacks, 3x AIME Qualifier, 2x USNCO Finalist (National Top 50), USACO Gold (International Top 2000), 2x USABO Semifinalist (National Top 10%), Coca-Cola Scholarship Finalist
+- **Awards**: Google Company Challenge Winner @ LAHacks, Telemedicine & Health Winner @ HopHacks 2024, 3x AIME Qualifier, 2x USNCO Finalist (National Top 50), USACO Gold (International Top 2000), 2x USABO Semifinalist (National Top 10%), Coca-Cola Scholarship Finalist
 
 [linkedin]: https://www.linkedin.com/in/nathanjzhao
 [blog-link]: https://nathanjzhao.github.io/
