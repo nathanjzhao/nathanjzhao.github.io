@@ -9,20 +9,33 @@ Stanford undergraduate that has been doing machine learning since middle school.
 
 ### **K-Scale Labs**
 *May 2024 – Present*
+- Developed quantized OpenVLA for the open-source robot "Stompy" using bitsandbytes, focusing on CUDA integration.
+- Led PPO and physics simulator development with MJX and JAX, exporting Flax models with Tensorflow.js for inference.
+- Integrated quantization methods into PyTorch by coding at the Python/C++ interface with Pybind.
 
-- Integrated quantization methods into PyTorch by coding at the Python/C++ interface with Pybind for CUDA inference.
-- Finetuning model policy with LoRA for inferring inverse kinematics to minimize energy cost/motor overheating, generating data from robot arm PPO, creating new torque-based agent controller, and modifying simulator’s joint articulation physics engine.
+### **Stanford University School of Medicine**
+*Sep 2023 - Present*
+- Developed deep learning models with Pytorch and Weights & Biases to identify Right Ventricular insertion points for AHA Segmentation model on cDTI MRI images.
+- Created an annotation system using AWS S3 for efficient data management.
+- Competed in lab's team for MICCAI 2024, focusing on MRI image reconstruction across various sampling rates, distributions, and contrasts.
 
-### **Stanford Cardiac MRI Research Group**
-*Sep. 2023 – Present*
+### **Jane Street**
+*Mar 2024*
+- Achieved 1st place in an intensive quantitative trading program by developing high-frequency arbitrage trading bots.
+- Conducted manual arbitrage strategies with ETFs to identify real-time opportunities and maximize returns.
+- Built a deep understanding of arbitrage mechanics and market dynamics in a live-trading environment.
 
-- Developing deep learning model from scratch with Pytorch and Weights & Biases to find Right Ventricular insertion points for applying American Heart Association Segmentation model on cDTI MRI images. Created annotation system with AWS S3.
+### **University of Delaware**
+*Feb 2021 - Dec 2022*
+- Led an independent investigation on phosphorene's anisotropic properties, publishing results on ChemRxiv and presenting at conferences including but not limited to the American Physics Society and Society of Engineering Science.
+- Conducted quantum simulations (LAMMPS, SIESTA) and analyzed DFT data, modeling stress-strain responses and identifying novel anisotropic material applications.
+- Published conference proceedings, demonstrating applications in flexible electronics, catalysis, and fracture-resistant materials.
 
-### **Jane Street** 
-*Mar. 2024*
-
-- One of 100 students selected for quantitative trading training through manual trading games, achieving 1st among all teams.
-- Created high-frequency arbitrage trading bots in Electronic Trading Challenge within program’s advanced division.
+### **The Summer Science Program** 
+*Jun 2022 - Jul 2022*
+- Designed procedures and characterized UmCdc14 phosphatase protein using wet-lab methods and MOE drug-discovery software.
+- Conducted homolog modeling, ligand docking, BLAST sequencing, and other computational techniques for enzyme inhibitor design. 
+- Published data into Purdue's research repository after writing a comprehensive report.
 
 ## Education
 
@@ -30,6 +43,7 @@ Stanford undergraduate that has been doing machine learning since middle school.
 *Sep. 2023 – May 2026*
 
 - **Relevant Coursework:** Computer Organization & Systems, Polya Problem Solving Seminar, Modern Mathematics: Discrete Methods, Introduction to Probability Theory, Applied Matrix Theory, Machine Learning, Design and Analysis of Algorithms, Deep Learning for Computer Vision, Natural Language Processing with Deep Learning
+- **Clubs:** Stanford Daily, BASES, Undergraduate Research Program, Student Robotics Club
 - **Research Conferences:** American Physics Society March Meeting, MIT Undergraduate Technology Research Conference, Society of Engineering Science Annual Technical Meeting, Sigma Xi Student Research Conference
 
 ## Skills
