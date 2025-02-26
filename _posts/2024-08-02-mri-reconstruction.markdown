@@ -17,7 +17,7 @@ Say we want to take an MR image quicker. This makes the patient need to spend le
 
 Therefore, the problem of MRI reconstruction is simple: we have an undersampled MR image and we want to reconstruct what the *underlying* image is. Let us define $$\hat{y} = Ex$$ where $$x$$ is our true underlying image, $$\hat{y}$$ is the undersampled image, and $$E$$ is some known function that our MRI machine is doing while taking its image defined by coil sensitivity maps, Fourier transforms, and a selected sampling pattern.
 
-Knowing $$\hat{y}$$ and $$E$$, we want to find $$x$$. In other words, we hope to find $$\arg\min_x {||\hat{y} - Ex||}_2^2$$ to solve the ill-posed inverse problem. As with many other minimizing problems, gradient descent can solve this easily. 
+Knowing $$\hat{y}$$ and $$E$$, we want to find $$x$$. In other words, we hope to find $$\arg\min_x {\|\hat{y} - Ex\|}_2^2$$ to solve the ill-posed inverse problem. As with many other minimizing problems, gradient descent can solve this easily. 
 
 However, the immediate issue we see is that the image we receive from our machine is not exactly what we expect. Any machine will produce noise. Therefore, we must have a regularizer:
 

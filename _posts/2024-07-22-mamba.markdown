@@ -30,6 +30,7 @@ If we can address these problems with a different architecture, we can hopefully
 ### What are these "State Space Models (SSMs)"?
 
 SSMs are characterized by two equations
+
 $$
 \begin{aligned}
 x'(t) &= Ax(t) + Bu(t) \\
