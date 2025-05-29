@@ -3,7 +3,7 @@ layout: default
 title: Nathan Zhao's Resume
 ---
 
-Stanford undergraduate that has been doing machine learning since middle school. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin], or shoot me an [email][mail-link].
+Stanford dropout. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin], or shoot me an [email][mail-link].
 
 ## Work History
 
