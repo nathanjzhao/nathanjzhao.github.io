@@ -8,11 +8,11 @@ excerpt: >
 
 This post builds on my [introduction to Mamba](/mamba) --- if you haven't read that yet, I'd recommend checking it out first for the full context on State Space Models.
 
-As a quick refresher, SSMs are characterized by these continuous equations that map functions to functions:
+As a quick refresher, SSMs are characterized by these continuous equations that map functions to functions. The continuous view gives us a function-to-function mapping, but in practice we're working with discrete sequences of tokens, embeddings, or time steps --- not continuous functions.
 
 ![ssm_representations](/images/mamba/ssm_representations.webp)
 
-The continuous view gives us a function-to-function mapping, but in practice we're working with discrete sequences of tokens, embeddings, or time steps --- not continuous functions. We need to discretize this to actually implement it on computers and train with gradient descent. Let's dive into the math behind how this discretization actually works.
+We need to discretize this to actually implement it on computers and train with gradient descent. Let's dive into the math behind how this discretization actually works.
 
 ### Proving the Discrete Form
 Let's start with the fundamental SSM equations in continuous form:
