@@ -5,17 +5,33 @@ title: Nathan Zhao's Resume
 
 Stanford dropout working on creating the shared autonomy for remotely teleoperatable humanoid robots. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin], or shoot me an [email][mail-link].
 
+
+<video width="100%" controls autoplay muted loop>
+  <source src="{{ '/images/resume/first_person_pov_medium.MOV' | relative_url }}" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
+
 ## Work History
 
+### **Nyro Robotics (Founder Fellow at South Park Commons)**
+*Mar 2025 - Present*
+- Founded company creating systems for VR teleoperation of humanoid robots as 1 of 30 founders accepted to competitive South Park Commons Founder Fellowship (twice yearly cohort).
+- Secured LOI with Booster (creator of world's most robust robots) and raised $2M+ in preseed extension, receiving $400K @ 7% and $600K uncapped MFN.
+- Managed interns, contractors, and technical hires to scale development operations.
+- Trained RL policies using teacher-student distillation for humanoid self-stabilization and lower body adaptability to upper body dynamic teleoperation, even while carrying heavy weights.
+- Led deal-making and developed NREs with VR camera and broadcast companies for non-line of sight 4K stereo video transmission and VR camera depth stitching.
+- Built VR headset control systems using Vuer with pedal control, enabling users to remotely walk robots while seeing through the robot's eyes.
+- Collaborated with companies developing tactile gloves and ICs for force detection to provide haptic feedback for enhanced teleoperability.
+
 ### **Stanford Artificial Intelligence Laboratory (SAIL)**
-*Sep 2024 - Present*
+*Sep 2024 - Mar 2025*
 - Developing dynamics-guided diffusion policies for manipulation of deformable materials by leveraging a transformer as a dynamics model for latent autoencoder representations of camera point cloud.
 - Generating data using a custom simulator built with Taichi for accurate and efficient physics-based simulations.
 - Optimizing test-time FID results by applying gradients to guide diffusion policies, inspired by classifier guidance in diffusion models for image and video generation.
 
 ### **K-Scale Labs**
-*May 2024 – Present*
-- Developed quantized OpenVLA for the open-source robot "Stompy" using bitsandbytes, focusing on CUDA integration.
+*May 2024 – Oct 2024*
+- Developed quantized OpenVLA for the open-source robot "Stompy" using bitsandbytes, focusing on CUDA integration at company with $2M+ in humanoid robot preorders.
 - Led PPO and physics simulator development with MJX and JAX, exporting Flax models with Tensorflow.js for inference.
 - Integrated quantization methods into PyTorch by coding at the Python/C++ interface with Pybind.
 
