@@ -6,8 +6,6 @@ excerpt: >
   The math behind why RNN-ifying SSMs works.
 ---
 
-{% katexmm %}
-
 This post builds on my [introduction to Mamba](/mamba) --- if you haven't read that yet, I'd recommend checking it out first for the full context on State Space Models.
 
 As a quick refresher, SSMs are characterized by these continuous equations that map functions to functions:
@@ -74,8 +72,6 @@ $$f((p_A^1, p_B^1), (p_A^2, p_B^2)) = (p_A^1 p_A^2, p_A^1 p_B^1 + p_B^2)$$
 which is basically the same associative function from Linear RNNs: $$f((W_1, x_1), (W_2, x_2)) = (W_1 W_2, W_1 x_1 + x_2)$$. Thus, a modification of the Blelloch parallel prefix scan applies, and we can parallelize the computation in $O(\log N)$ sequential steps. Once we have all the $x_i$ states, computing the outputs $y_i = Cx_i + Du_i$ is just a simple linear transformation and bias as we discussed earlier.
 
 This is the core system that enables SSMs to work efficiently during inference. And luckily, because we have already computed all the $p_A^i$, $p_B^i$, and $x_i$ values during the forward pass, we can cache them and use them during backpropagation!
-
-{% endkatexmm %}
 
 <!-- - parallelizable in v3 (read readme) https://github.com/MzeroMiko/mamba-mini/tree/main
 - proof explaination:
