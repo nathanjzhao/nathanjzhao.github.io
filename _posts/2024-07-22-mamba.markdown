@@ -22,7 +22,7 @@ Some sources to look for more insight + math:
 
 There are a few:
 - During *qkv*, calculating the attention score of each token (relative to every other) is $$O(N^2)$$ according to the length of the context window.
-- Further, the quadratically-growing key-value cache needs to be stored alongside the model during inference.
+- Further, the linearly-growing key-value cache needs to be stored alongside the model during inference.
 - Moreover, having a context window at all is rather limiting
 
 If we can address these problems with a different architecture, we can hopefully be better at long-range tasks, synthesizing speech and video (which are packed with context), training models quicker, and inference on smaller devices.
