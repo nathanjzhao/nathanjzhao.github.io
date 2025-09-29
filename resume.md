@@ -3,7 +3,7 @@ layout: default
 title: Nathan Zhao's Resume
 ---
 
-Stanford dropout working on creating the shared autonomy for remotely teleoperatable humanoid robots. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin], or shoot me an [email][mail-link].
+Ex-Stanford dropout working on creating the shared autonomy for remotely teleoperatable humanoid robots. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin], or shoot me an [email][mail-link].
 
 
 <video width="100%" controls autoplay muted loop>
