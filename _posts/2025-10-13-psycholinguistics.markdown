@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Psycholinguistics and NLP"
-tags: [psycholinguistics, neuroscience, language, AI]
+tags: [ml, musings]
 excerpt: >
-  Exploring the intricate web of word recognition in the brain and drawing parallels to language models, from cohort effects to high-entropy decision points.
+  Exploring the intricate web of word recognition in the brain, in relation to language models
 ---
 
 ---
