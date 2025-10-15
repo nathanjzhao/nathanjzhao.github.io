@@ -53,7 +53,7 @@ This parallel activation is remarkably efficient, allowing us to recognize words
 
 We can explicitly observe similar uncertainty patterns in human brains. The N400 component (~400ms) reflects semantic processing difficulty—larger responses indicate contextually unexpected or semantically unrelated words. The P300 component (~300ms) tracks categorization certainty, with diminished amplitude when stimulus properties conflict. In [research involving antonym processing tasks](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2019.00285/full), where participants judged whether semantically related words like "yellow" versus unrelated words like "nice" were antonyms of "black," related non-antonyms showed reduced P300 amplitude, indicating lower decision certainty. This brain-based uncertainty signal parallels model entropy in LLMs, suggesting similar challenges in resolving semantic competition.
 
-## The Rhyme Effect: Complicating the Picture
+## Phonological Complexity Beyond Cohorts
 
 Interestingly, [Allopenna et al. (1998)](https://www.sciencedirect.com/science/article/pii/S0749596X97925584) used eye-tracking to show that rhyme words (like "speaker" when hearing "beaker") also attract associations, albeit less than cohort competitors. This challenges strict left-to-right processing models and suggests a more complex network of activation.
 
