@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Psycholinguistics and Transformer Attention"
+title: "Psycholinguistics and Transformer Circuits"
 tags: [ml, musings]
 excerpt: >
   Exploring the intricate web of word recognition in the brain, in relation to language models
@@ -8,11 +8,13 @@ excerpt: >
 
 ---
 
+Psycholinguistics studies how our minds process language - from recognizing sounds and words to understanding grammar and meaning. As we build increasingly sophisticated language models, it's fascinating to consider how biological neural networks tackle the same fundamental challenges. What if we could peek inside both systems as they process language?
+
 Before we dive in, try this yourself: [Lexical Decision Task](https://www.psytoolkit.org/experiment-library/experiment_ldt.html)
 
 You'll see letter strings flash on screen - your job is to decide as quickly as possible whether each is a real word or not. Those tiny differences in response time reveal the underlying mechanics of word recognition.
 
-What you just experienced demonstrates the core phenomena we'll explore in this post. Individual trials vary, but repeat the task 100 times and clear patterns appear - systematic differences that reveal how your brain processes language.
+What you just experienced demonstrates the core phenomena we'll explore in this post. Individual trials vary, but repeat the task 100 times and clear patterns appear - systematic differences in response time that reveal how your brain processes language.
 
 ## Facilitation and Inhibition in Word Recognition
 
@@ -56,7 +58,7 @@ Interestingly, [Allopenna et al. (1998)](https://www.sciencedirect.com/science/a
 
 In their experiment, participants were asked to look at the center, then instructed to "look at the beaker." The graph shows fixation probability over time for the target (beaker), cohort competitor (beetle), rhyme competitor (speaker), and unrelated distractor (carriage). Notice how both cohort and rhyme competitors initially attract attention before the target dominates.
 
-The rhyme competitor effect is particularly intriguing. While the cohort model predicts that "beetle" should attract attention when hearing "bee-" (since it shares the initial phonemes), why would "speaker" compete when hearing "beaker"? They don't share any initial sounds. This suggests something beyond simple left-to-right processing.
+The rhyme competitor effect is particularly intriguing. While the cohort model predicts that "beetle" should attarct gaze when hearing "bee-" (since it shares the initial phonemes), why would "speaker" compete when hearing "beaker"? They don't share any initial sounds. This suggests something beyond simple left-to-right processing.
 
 The [TRACE model](https://www.sciencedirect.com/science/article/pii/0010028586900150?via%3Dihub) by McClelland & Elman (1986) offers an explanation. Rather than explicit rules, TRACE proposes that phonological knowledge rises from weighted connections between units - what appears to be rule-following is actually emergent behavior from simple interactions.
 
@@ -86,11 +88,11 @@ The question isn't whether we should replace transformers - their architectural 
 
 ---
 
-*This post builds upon insights from Cory Shein's excellent psycholinguistics lectures. Any errors or oversimplifications are my own.*
+*Figures from Cory Shein's excellent psycholinguistics lectures.*
 
 [^1]: Interestingly, neuroscience research on antonym detection shows similar uncertainty patterns in human brains. The [N400 component (~400ms) measures semantic processing difficulty](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2019.00285/full) - larger responses indicate unexpected/unrelated words, while the P300 component (~300-600ms) measures decision confidence. This brain-based uncertainty measurement parallels model entropy in LLMs, suggesting similar computational challenges in resolving semantic competition.
 
-[^2]: [Multilingual transformer circuits](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#dives-multilingual) research also interestingly reveals that language processing appears hierarchically separated, with three distinct computational parts: operation (e.g., antonym), operand (e.g., small), and language context. The hierarchical language separation reflects ideas from the [Revised Hierarchical Model (RHM)](https://www.sciencedirect.com/science/article/pii/S0749596X84710084) for bilingual word recognition. RHM proposes that bilinguals maintain a hierarchy between their native language (L1) and second language (L2), where L2 words are initially accessed through L1 conceptual links before developing direct conceptual connections.
+[^2]: [Multilingual transformer circuits](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#dives-multilingual) research also interestingly reveals that language processing appears hierarchically separated, with three distinct computational parts: operation (e.g., antonym), operand (e.g., small), and language context. The hierarchical language separation reflects ideas from the [Revised Hierarchical Model (RHM)](https://www.sciencedirect.com/science/article/pii/S0749596X84710084) for bilingual word recognition. RHM proposes that bilinguals maintain a hierarchy between their native language (L1) and second language (L2), where L2 words are initially accessed through L1 conceptual links before developing direct conceptual connections, reflecting debate on whether models think in English and Anthropic's intervention experiments to change the output language.
 
 [^3]: As an example of rich phonological processing in humans: [bilinguals automatically activate phonological representations from both languages when reading](https://pmc.ncbi.nlm.nih.gov/articles/PMC12426078/). In masked priming studies, where words flash too quickly for conscious processing, participants responded faster when prime and target words shared sounds across languages despite different meanings (like Dutch "wie" /wi/ and French "OUI" /wi/), demonstrating automatic cross-linguistic phonological activation.
 
