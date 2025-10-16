@@ -27,7 +27,7 @@ I don't want to restrain myself to a brief subset of hobbies or interests, but f
 </div>
 
 <div class="timeline-entry">
-  <div class="timeline-date">Jan-Feb 2025</div>
+  <div class="timeline-date">Jan/Feb 2025</div>
   <div class="timeline-content">Winner at KHacks 2.0 & 3.0 - Built voice-controlled skill library and 6DoF hand for humanoid robot with <a href="https://x.com/nathanzhaoo/status/1881153959412584893">Apple Vision Pro teleoperation</a></div>
 </div>
 
