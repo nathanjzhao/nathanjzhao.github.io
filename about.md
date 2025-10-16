@@ -53,7 +53,7 @@ I don't want to restrain myself to a brief subset of hobbies or interests, but f
 
 <div class="timeline-entry">
   <div class="timeline-date">May 2024</div>
-  <div class="timeline-content">Worked at <a href="https://www.kscale.dev/">K-Scale Labs</a> building RL simulator from scratch with Mujoco and JAX (open source humanoid robots company, #1 US in robots shipped, now $2M+ in pre-orders), gave research talks on <a href="https://nathanzhao.cc/flow-matching">flow matching</a> and <a href="https://nathanzhao.cc/mamba">Mamba architectures</a></div>
+  <div class="timeline-content">Worked at <a href="https://www.kscale.dev/">K-Scale Labs</a> building RL simulator from scratch with Mujoco and JAX (open source humanoid robots company, #1 in US robots shipped, now $2M+ in pre-orders), gave research talks on <a href="https://nathanzhao.cc/flow-matching">flow matching</a> and <a href="https://nathanzhao.cc/mamba">Mamba architectures</a></div>
 </div>
 
 <div class="timeline-entry">
@@ -63,7 +63,7 @@ I don't want to restrain myself to a brief subset of hobbies or interests, but f
 
 <div class="timeline-entry">
   <div class="timeline-date">Mar 2024</div>
-  <div class="timeline-content">Won 1st place at <a href="https://www.janestreet.com/">Jane Street</a> <a href="https://www.janestreet.com/join-jane-street/programs-and-events/fttp/">First-Year Trading Program (FTTP)</a> - developed high-frequency arbitrage trading bots</div>
+  <div class="timeline-content">1 of 100 students selected to join <a href="https://www.janestreet.com/">Jane Street</a> <a href="https://www.janestreet.com/join-jane-street/programs-and-events/fttp/">First-Year Trading Program (FTTP)</a>, won 1st place in fast-paced arbitrage environment - developed high-frequency arbitrage trading bots</div>
 </div>
 
 <div class="timeline-entry">
@@ -77,7 +77,7 @@ I don't want to restrain myself to a brief subset of hobbies or interests, but f
 </div>
 
 <div class="timeline-entry">
-  <div class="timeline-date">Jun-Jul 2022</div>
+  <div class="timeline-date">Jul 2022</div>
   <div class="timeline-content">Research Scientist at <a href="https://ssp.org/">Summer Science Program</a> - designed procedures for UmCdc14 phosphatase protein characterization using wet-lab methods and MOE drug-discovery software, worked with early AlphaFold</div>
 </div>
 
