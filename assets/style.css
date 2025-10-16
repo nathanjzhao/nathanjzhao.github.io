@@ -776,6 +776,40 @@ pre.collapsed {
   }
 }
 
+/* Timeline styling for Recent section */
+.timeline-entry {
+  display: flex;
+  margin-bottom: 1.2em;
+  line-height: 1.4;
+}
+
+.timeline-date {
+  flex: 0 0 140px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.timeline-content {
+  flex: 1;
+  padding-left: 0;
+}
+
+@media (max-width: 600px) {
+  .timeline-entry {
+    flex-direction: column;
+    margin-bottom: 1.5em;
+  }
+  
+  .timeline-date {
+    flex: none;
+    margin-bottom: 0.3em;
+  }
+  
+  .timeline-content {
+    padding-left: 0;
+  }
+}
+
 .light-fill {
   fill: rgb(255, 255, 255);
   @media (prefers-color-scheme: dark) {

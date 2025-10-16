@@ -9,6 +9,98 @@ I have a few poetry publications, material science research I presented at the A
 
 The best way to learn about me though, I think, is to look at my [musings](/tagged/musings/) and talk to me (reach out over email at nathanzh [at] stanford [dot] edu)
 
+## A Selected Timeline of My Life Events
+
+<div class="timeline-entry">
+  <div class="timeline-date">Oct 2025</div>
+  <div class="timeline-content">Received repeat investment from <a href="https://www.mercatus.org/emergent-ventures">Emergent Ventures</a> by <a href="https://x.com/tylercowen">Tyler Cowen</a> (5x previous grant size)</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Sep 2025</div>
+  <div class="timeline-content">Left <a href="https://www.nyrorobotics.com/">Nyro Robotics</a> to </div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Mar 2025</div>
+  <div class="timeline-content">Left Stanford to start <a href="https://www.nyrorobotics.com/">Nyro Robotics</a> and develop whole body control and realtime feedback for telepresence in humanoid robots, joined <a href="https://www.southparkcommons.com/founder-fellowship">South Park Commons Founder Fellowship FF25</a> ($400k @ 5% + $600k Uncapped MFN)</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Jan-Feb 2025</div>
+  <div class="timeline-content">Winner at KHacks 2.0 & 3.0 - Built voice-controlled skill library and 6DoF hand for humanoid robot with <a href="https://x.com/nathanzhaoo/status/1881153959412584893">Apple Vision Pro teleoperation</a></div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Sep 2024</div>
+  <div class="timeline-content">Joined <a href="https://src.stanford.edu/">Stanford Robotics Center</a> at <a href="https://real.stanford.edu/">REAL Lab</a> (invented <a href="https://umi-gripper.github.io/">UMI</a> and <a href="https://diffusion-policy.cs.columbia.edu/">diffusion policies</a>, core technologies in modern manipulation) - developing dynamics-guided diffusion policies for deformable material manipulation using transformer dynamics models and custom <a href="https://github.com/taichi-dev/difftaichi">Taichi</a> simulator</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Sep 2024</div>
+  <div class="timeline-content">Winner at <a href="https://hophacks.com/">HopHacks 2024</a> (Telemedicine & AI track) - HealthIndia voice synthesis for rural patient calls</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Aug 2024</div>
+  <div class="timeline-content">4th place in <a href="https://cmrxrecon.github.io/2024/Home.html">MICCAI 2024 MRI Reconstruction Challenge</a> - <a href="https://nathanzhao.cc/mri-reconstruction">reconstructed undersampled MRI images</a> for diagnostic effectiveness</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Jul 2024</div>
+  <div class="timeline-content">Awarded <a href="https://www.mercatus.org/emergent-ventures">Emergent Ventures</a> grant by <a href="https://x.com/tylercowen">Tyler Cowen</a></div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">May 2024</div>
+  <div class="timeline-content">Worked at <a href="https://www.kscale.dev/">K-Scale Labs</a> building RL simulator from scratch with Mujoco and JAX (open source humanoid robots company, #1 US in robots shipped, now $2M+ in pre-orders), gave research talks on <a href="https://nathanzhao.cc/flow-matching">flow matching</a> and <a href="https://nathanzhao.cc/mamba">Mamba architectures</a></div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Apr 2024</div>
+  <div class="timeline-content">Winner at <a href="https://lahacks.com/">LAHacks 2024</a> (Google Company Challenge track) - Clippy: multimodal video indexing with agentic AI for editing longform content</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Mar 2024</div>
+  <div class="timeline-content">Won 1st place at <a href="https://www.janestreet.com/">Jane Street</a> <a href="https://www.janestreet.com/join-jane-street/programs-and-events/fttp/">First-Year Trading Program (FTTP)</a> - developed high-frequency arbitrage trading bots</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Apr 2023</div>
+  <div class="timeline-content">Won <a href="https://www.acs.org/education/olympiad.html">US National Chemistry Olympiad (USNCO)</a> High Honors - Top 50 nationally, organized by <a href="https://www.acs.org/">American Chemical Society</a>, conducted extensive labwork in organic chemistry, biochemistry, and analytical chemistry</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Feb 2023</div>
+  <div class="timeline-content">Read <a href="https://www.amazon.com/Campbell-Biology-11th-Lisa-Urry/dp/0134093410">Campbell Biology</a> in one month to prepare for <a href="https://www.usabo-trc.org/">USA Biology Olympiad (USABO)</a>, won Semifinalist - Top 10% nationally, learning neuroscience, cell biology, pathology, genetics, plant anatomy, and other biology fields</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Jun-Jul 2022</div>
+  <div class="timeline-content">Research Scientist at <a href="https://ssp.org/">Summer Science Program</a> - designed procedures for UmCdc14 phosphatase protein characterization using wet-lab methods and MOE drug-discovery software, worked with early AlphaFold</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Mar 2022</div>
+  <div class="timeline-content">Conducted materials science research on phosphorene using DFT and molecular dynamics, <a href="https://ui.adsabs.harvard.edu/abs/2022APS..MARG00013Z/abstract">discovering novel material properties</a> - published at <a href="https://summit.aps.org/">American Physics Society March Meeting</a></div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Mar 2020</div>
+  <div class="timeline-content">Spent time on <a href="https://codeforces.com/">Codeforces</a> (try to find my account), won <a href="https://usaco.org/">USA Computing Olympiad (USACO)</a> Gold Division - advanced problem-solving with dynamic programming, graph algorithms, and data structures</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">Mar 2018</div>
+  <div class="timeline-content">Created <a href="https://pstsagroup.github.io/videogame2018/">3D platformer game in Unity</a> for Technology Student Association competition. Have fun!</div>
+</div>
+
+<div class="timeline-entry">
+  <div class="timeline-date">2012</div>
+  <div class="timeline-content">Started coding at age 7 - making interactive/animated birthday cards for grandparents and 2D platformers in Java</div>
+</div>
+
 <!-- #### What non-traditional things were you doing growing up?
 
 In elementary school, I learned how to code in Java and created games and animations using Khan Academy's Java interface. For my mom's birthday, I even made her a digital animated card. By middle school, I began creating Unity games in C#, developing a full 3D platformer game with unique mechanics like building temporary platforms. I even ended up placing first place in a TSA competition! 
