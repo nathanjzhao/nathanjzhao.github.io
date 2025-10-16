@@ -3,7 +3,7 @@ layout: default
 title: Nathan Zhao's Resume
 ---
 
-I'm not sure why this is the first link that shows up about me when I get searched (during time of writing), but refer to my [About](/about) page if you truly want to learn more about who I am and how I got here.
+I'm not sure why this is the first link that shows up about me when I get searched (during time of writing), but refer to my [About](/about) page if you want to learn more about who I am and how I got here.
 
 <video width="100%" controls autoplay muted loop>
   <source src="{{ '/images/resume/first_person_pov_medium.MOV' | relative_url }}" type="video/quicktime">
