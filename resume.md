@@ -3,8 +3,7 @@ layout: default
 title: Nathan Zhao's Resume
 ---
 
-Ex-Stanford dropout working on creating the shared autonomy for remotely teleoperatable humanoid robots. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design. Check out my [blog][blog-link], [Github][github-link], [LinkedIn][linkedin], or shoot me an [email][mail-link].
-
+I'm not sure why this is the first link that shows up about me when I get searched (during time of writing), but refer to my [About](/about) page if you truly want to learn more about who I am and how I got here.
 
 <video width="100%" controls autoplay muted loop>
   <source src="{{ '/images/resume/first_person_pov_medium.MOV' | relative_url }}" type="video/quicktime">

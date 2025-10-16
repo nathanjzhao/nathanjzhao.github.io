@@ -3,22 +3,22 @@ layout: default
 title: About
 ---
 
-Beyond everything software, machine learning, and applied math that I do in research, hackathons, or personal projects, I also enjoy playing Scrabble (it's really a strategy game if you think about it), solving puzzles, and analyzing contemporary music, literature, and film.
+Ex-Stanford dropout working on creating shared autonomy for remotely teleoperatable humanoid robots. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design.
 
-I have a few poetry publications, material science research I presented at the American Physics Society, and semifinalist/finalist placings in competitive olympiads for chemistry, biology, math, and programming. You can learn anything if you try hard enough.
+I have a few poetry publications, a wide sprawl of media I enjoy (but is too nonhomogenous to effectively list), and semifinalist/finalist placings in competitive olympiads for chemistry, biology, math, and programming.
 
-The best way to learn about me though, I think, is to look at my [musings](/tagged/musings/) and talk to me (reach out over email at nathanzh [at] stanford [dot] edu)
+I don't want to restrain myself to a brief subset of hobbies or interests, but feel free to extrapolate who I am from my [blog](/), or reach out to talk to me (nathanzh [at] stanford [dot] edu)
 
 ## A Selected Timeline of My Life Events
 
 <div class="timeline-entry">
   <div class="timeline-date">Oct 2025</div>
-  <div class="timeline-content">Received repeat investment from <a href="https://www.mercatus.org/emergent-ventures">Emergent Ventures</a> by <a href="https://x.com/tylercowen">Tyler Cowen</a> (5x previous grant size)</div>
+  <div class="timeline-content">Received repeat nondilutive grant from <a href="https://www.mercatus.org/emergent-ventures">Emergent Ventures</a> by <a href="https://x.com/tylercowen">Tyler Cowen</a> (5x previous grant size)</div>
 </div>
 
 <div class="timeline-entry">
   <div class="timeline-date">Sep 2025</div>
-  <div class="timeline-content">Left <a href="https://www.nyrorobotics.com/">Nyro Robotics</a> to </div>
+  <div class="timeline-content"><a href="https://x.com/nathanzhaoo/status/1976710733154206156">Left Nyro Robotics</a> to explore deeper problems (message me if you want to hear more details / to learn about what's next!)</div>
 </div>
 
 <div class="timeline-entry">
@@ -98,7 +98,7 @@ The best way to learn about me though, I think, is to look at my [musings](/tagg
 
 <div class="timeline-entry">
   <div class="timeline-date">2012</div>
-  <div class="timeline-content">Started coding at age 7 - making interactive/animated birthday cards for grandparents and 2D platformers in Java</div>
+  <div class="timeline-content">Started coding at age 7 - making interactive/animated birthday cards for grandparents and 2D platformers in Java. Thank God for <a href="https://www.khanacademy.org/">Sal Khan!</a></div>
 </div>
 
 <!-- #### What non-traditional things were you doing growing up?
