@@ -93,7 +93,7 @@ I don't want to restrain myself to a brief subset of hobbies or interests, but f
 
 <div class="timeline-entry">
   <div class="timeline-date">Mar 2018</div>
-  <div class="timeline-content">Created <a href="https://pstsagroup.github.io/videogame2018/">3D platformer game in Unity</a> for Technology Student Association competition. Have fun!</div>
+  <div class="timeline-content">Created <a href="https://pstsagroup.github.io/videogame2018/">3D platformer game in Unity</a> for Technology Student Association competition. Also did some other projects with website design, flying balsa wood planes, and some other things I probably don't remember. Play the game!</div>
 </div>
 
 <div class="timeline-entry">
