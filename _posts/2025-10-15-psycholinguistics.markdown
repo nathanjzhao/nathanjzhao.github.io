@@ -37,7 +37,7 @@ Notice that this idea isn't unique to human cognition. In AI, word embeddings li
 
 ![Semantic network showing mediated priming](/images/psycholinguistics/semantic_network.webp)
 
-But in humans, why doesn't everything get activated when we hear a word? Two key principles govern spreading activation:
+But in humans, looking at facilitation, why doesn't everything get activated when we hear a word? Two key principles govern spreading activation:
 
 1. **Spreading activation takes time** - Neural signals don't travel instantaneously
 2. **Activation decays** - Without sustained input, neural activity fades
@@ -65,11 +65,11 @@ The rhyme competitor effect is particularly intriguing. While the cohort model p
 
 The [TRACE model](https://www.sciencedirect.com/science/article/pii/0010028586900150?via%3Dihub) by McClelland & Elman (1986) offers an explanation. Rather than explicit rules, TRACE proposes that phonological knowledge rises from weighted connections between units - what appears to be rule-following is actually emergent behavior from simple interactions.
 
-LLMs show similar abilities to recognize rhymes and phonetic patterns despite being trained purely on text. Research on [transformer circuits](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#dives-poems) reveals how models develop emergent understanding of sound patterns through exposure to poems and explicit rhyme schemes, with no direct phonetic input.[^1]
+LLMs takes TRACE's "emergent behavior" to its extreme, showing similar abilities to recognize rhymes and phonetic patterns despite being trained purely on text. Research on [transformer circuits](https://transformer-circuits.pub/2025/attribution-graphs/biology.html#dives-poems) reveals how models develop emergent understanding of sound patterns through exposure to poems and explicit rhyme schemes, with no direct phonetic input.[^1]
 
 This mirrors the TRACE model's insight: what appears to be explicit phonetic knowledge may actually be an artifact emerging from larger patterns in the data. Just as we inherit language from the society around us, LLMs inherit not only language but also implicit ideas about phonetics that they can't directly experience. They develop understanding of rhymes, alliteration, and other sound patterns purely through statistical exposure to how humans use language. However, because LLMs are trained through tokenization schemes that prioritize meaning over phonetics, they're unlikely to exhibit the same rich phonetic activation patterns that humans demonstrate.
 
-As an example of rich phonological processing in humans: [bilinguals automatically activate phonological representations from both languages when reading](https://pmc.ncbi.nlm.nih.gov/articles/PMC12426078/). In masked priming studies, where words flash too quickly for conscious processing, participants responded faster when prime and target words shared sounds across languages despite different meanings (like Dutch "wie" /wi/ and French "OUI" /wi/), demonstrating automatic cross-linguistic phonological activation.
+As an example of rich phonological processing in humans: [bilinguals automatically activate phonological representations from both languages when reading](https://pmc.ncbi.nlm.nih.gov/articles/PMC12426078/). In masked priming studies, where words flash too quickly for conscious processing, participants responded faster when prime and target words shared sounds across languages despite different meanings (like Dutch "wie" /wi/ and French "OUI" /wi/), demonstrating automatic cross-linguistic phonological activation. Interesting research could come out of deliberately exploring LLM's phonetic associations in non-phonetic contexts (i.e. while not writing a poem).
 
 ## Brains vs. LLMs: Fundamental Architectural Differences
 
