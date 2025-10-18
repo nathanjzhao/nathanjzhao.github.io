@@ -1,0 +1,118 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/katex/katex.min.css' | relative_url }}">
+
+    <!-- KaTeX for LaTeX rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+</head>
+
+<body>
+<main>
+    <style>
+        /* Clean preview styling - overrides for typewriter aesthetic */
+        body {
+            font-family: 'Courier New', Monaco, 'Lucida Console', monospace !important;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px;
+            line-height: 1.6;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            color: black !important;
+        }
+        
+        .date {
+            color: #666;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        h2, h3, h4, h5, h6 {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: black !important;
+        }
+        
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            border-bottom: 1px solid black;
+            padding-bottom: 3px;
+        }
+        
+        /* Remove navigation and other elements */
+        nav, .arrows, hr, footer, header {
+            display: none !important;
+        }
+        
+        /* Restore proper centering and spacing */
+        body {
+            margin: 0 auto !important;
+            padding: 60px !important;
+        }
+        
+        main {
+            margin: 0 auto;
+            display: block;
+        }
+        
+        /* Keep normal link styling */
+        a {
+            color: #3273dc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Better paragraph spacing */
+        #blog-contents p {
+            margin: 16px 0;
+        }
+        
+        #blog-contents {
+            line-height: 1.6;
+        }
+        
+        /* Ensure all text elements are black */
+        strong, b, em, i, ol li, ul li, ol, ul {
+            color: black !important;
+        }
+    </style>
+
+    <h1>{{ page.title }}</h1>
+    <div class="date">{{ page.date | date: "%B %d, %Y" }}</div>
+    
+    <div id="blog-contents">
+        {{ page.content }}
+    </div>
+
+</main>
+</body>
+</html>

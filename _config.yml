@@ -62,6 +62,9 @@ collections:
   my_tags:
     output: true
     permalink: /tagged/:slug/
+  previews:
+    output: true
+    permalink: /preview/:name/
 defaults:
   -
     scope:
@@ -69,6 +72,12 @@ defaults:
       type: my_tags
     values:
       layout: tagged
+  -
+    scope:
+      path: ""
+      type: previews
+    values:
+      layout: preview
   -
     scope:
       path: "assets/"
