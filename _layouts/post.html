@@ -63,12 +63,41 @@ layout: compress
             display: block;
             color: #6b7280;
             text-decoration: none;
-            padding: 4px 0;
+            padding: 4px 8px;
             line-height: 1.4;
+            border-radius: 4px;
+            transition: all 0.2s ease;
         }
 
         .floating-toc a:hover {
             color: #1f2937;
+            background-color: #f3f4f6;
+        }
+
+        /* Hierarchical indentation */
+        .floating-toc div[style*="margin-left: 0em"] a {
+            font-weight: 500;
+            color: #374151;
+        }
+
+        .floating-toc div[style*="margin-left: 1em"] a {
+            font-size: 13px;
+            padding-left: 16px;
+        }
+
+        .floating-toc div[style*="margin-left: 2em"] a {
+            font-size: 12px;
+            padding-left: 32px;
+        }
+
+        .floating-toc div[style*="margin-left: 3em"] a {
+            font-size: 11px;
+            padding-left: 48px;
+        }
+
+        /* Smooth scrolling for the page */
+        html {
+            scroll-behavior: smooth;
         }
 
         @media (max-width: 1200px) {

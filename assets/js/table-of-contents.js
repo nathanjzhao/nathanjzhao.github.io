@@ -57,6 +57,20 @@
     if (element.localName === "h5") dep = 3;
     newElem.style.marginLeft = `${dep}em`;
 
+    // Add smooth scrolling click handler
+    newLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest'
+      });
+      // Update URL hash after scrolling
+      setTimeout(() => {
+        history.pushState(null, null, `#${element.id}`);
+      }, 500);
+    });
+
     newElem.appendChild(newLink);
     floatingTocContent.appendChild(newElem);
   });
