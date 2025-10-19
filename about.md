@@ -5,9 +5,9 @@ title: About
 
 Ex-Stanford dropout working on creating shared autonomy for remotely teleoperatable humanoid robots. Interested in implementing machine learning models from scratch, developing creative hackathon projects, and speeding up model training/inference with FSDP, quantization methods, and low-level architecture design.
 
-I have a few poetry publications, a wide sprawl of media I enjoy (but is too nonhomogenous to effectively list), and semifinalist/finalist placings in competitive olympiads for chemistry, biology, math, and programming.
+I have a few poetry publications, a wide sprawl of media I enjoy (but is too heterogeneous to effectively list), and semifinalist/finalist placings in competitive olympiads for chemistry, biology, math, and programming.
 
-I don't want to restrain myself to a brief subset of hobbies or interests, but feel free to extrapolate who I am from my [blog](/), or reach out to talk to me (nathanzh [at] stanford [dot] edu)
+I don't want to restrain myself to a brief subset of hobbies or interests, but feel free to extrapolate who I am from my [blog](/), check out some [papers I like](/papers), or reach out to talk to me (nathanzh [at] stanford [dot] edu)
 
 ## A Selected Timeline of My Life Events
 
