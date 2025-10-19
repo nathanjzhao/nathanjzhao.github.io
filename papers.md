@@ -22,7 +22,7 @@ A collection of papers that have influenced my thinking or that I find particula
 
 <div class="timeline-entry">
   <div class="timeline-date"><a href="https://arxiv.org/pdf/2506.01939">Beyond the 80/20 Rule</a></div>
-  <div class="timeline-content">Clever approach using entropy during inference to guide training efficiency. The insight that high-entropy tokens act as "reasoning forks" is compelling - focus optimization where the model is most uncertain. <a href="https://arxiv.org/pdf/2506.14758">Another entropy-centric paper</a> explores using model intrinsics, but for encouraging exploration during learning.</div>
+  <div class="timeline-content">Clever approach using entropy during inference to guide training efficiency, allowing them to ignore 80% of tokens during gradient updates. <a href="https://arxiv.org/pdf/2506.14758">Another entropy-centric paper</a> explores using model intrinsics, but for encouraging exploration during learning.</div>
 </div>
 
 ## Other Interesting Readings
