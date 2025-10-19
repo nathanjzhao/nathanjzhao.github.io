@@ -21,9 +21,9 @@ layout: compress
 
     <hr />
 
-    <h1>{{ page.title }}</h1>
-    {% if page.excerpt %}<h4 class="subtitle">{{ page.excerpt }}</h4>{% endif %}
-    <i>{{ page.date | date: "%b %d, %Y" }}</i>
+    <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
+    {% if page.excerpt %}<p class="subtitle" style="font-size: 1.1rem; color: #6b7280; margin: 0.75rem 0 1rem 0; line-height: 1.5; font-style: italic;">{{ page.excerpt }}</p>{% endif %}
+    <p style="margin: 0.5rem 0 1.5rem 0;">{{ page.date | date: "%b %d, %Y" }}</p>
     
     <hr />
 
@@ -60,6 +60,10 @@ layout: compress
                 background: rgba(31, 41, 55, 0.95);
                 border: 1px solid #4b5563;
                 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            }
+
+            .subtitle {
+                color: #9ca3af !important;
             }
         }
 
