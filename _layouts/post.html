@@ -24,6 +24,8 @@ layout: compress
     <h1>{{ page.title }}</h1>
     {% if page.excerpt %}<h4 class="subtitle">{{ page.excerpt }}</h4>{% endif %}
     <i>{{ page.date | date: "%b %d, %Y" }}</i>
+    
+    <hr />
 
     <!-- Floating Table of Contents -->
     <nav id="floating-toc" class="floating-toc">
@@ -53,6 +55,14 @@ layout: compress
             display: none; /* Hidden by default, script will show it */
         }
 
+        @media (prefers-color-scheme: dark) {
+            .floating-toc {
+                background: rgba(31, 41, 55, 0.95);
+                border: 1px solid #4b5563;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            }
+        }
+
         .floating-toc .toc-header {
             font-weight: 600;
             margin-bottom: 12px;
@@ -78,6 +88,25 @@ layout: compress
         .floating-toc div[style*="margin-left: 0em"] a {
             font-weight: 500;
             color: #374151;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .floating-toc .toc-header {
+                color: #f9fafb;
+            }
+
+            .floating-toc a {
+                color: #9ca3af;
+            }
+
+            .floating-toc a:hover {
+                color: #f9fafb;
+                background-color: #374151;
+            }
+
+            .floating-toc div[style*="margin-left: 0em"] a {
+                color: #d1d5db;
+            }
         }
 
         .floating-toc div[style*="margin-left: 1em"] a {

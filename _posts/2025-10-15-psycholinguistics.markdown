@@ -6,8 +6,6 @@ excerpt: >
   Exploring the intricate web of word recognition in the brain, in relation to language models
 ---
 
----
-
 Psycholinguistics studies how our minds process language - from recognizing sounds and words to understanding grammar and meaning. As we build increasingly sophisticated language models, it's fascinating to consider how biological neural networks tackle the same fundamental challenges. What if we could peek inside both systems as they process language?
 
 Before we dive in, try this yourself: [Lexical Decision Task](https://www.psytoolkit.org/experiment-library/experiment_ldt.html)
