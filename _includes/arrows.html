@@ -1,19 +1,23 @@
 {% if page.previous.url or page.next.url %}
 <nav>
-  <div style="display: flex; justify-content: space-between;">
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
     {% if page.previous.url %}
-    <span>
-      <a class="prev" href="{{page.previous.url}}">
+    <div style="flex: 1; min-width: 0;">
+      <a class="prev" href="{{page.previous.url}}" style="display: block; text-align: left; text-decoration: none; padding: 0.5rem 0; word-wrap: break-word;">
         ⋘ {{page.previous.title}}
       </a>
-    </span>
+    </div>
+    {% else %}
+    <div style="flex: 1;"></div>
     {% endif %}
     {% if page.next.url %}
-    <span>
-      <a class="next" href="{{page.next.url}}">
+    <div style="flex: 1; min-width: 0;">
+      <a class="next" href="{{page.next.url}}" style="display: block; text-align: right; text-decoration: none; padding: 0.5rem 0; word-wrap: break-word;">
         {{page.next.title}} ⋙
       </a>
-    </span>
+    </div>
+    {% else %}
+    <div style="flex: 1;"></div>
     {% endif %}
   </div>
 </nav>
