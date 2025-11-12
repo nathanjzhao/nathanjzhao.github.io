@@ -23,7 +23,7 @@ I don't want to restrain myself to a brief subset of hobbies or interests, but f
 
 <div class="timeline-entry">
   <div class="timeline-date">Mar 2025</div>
-  <div class="timeline-content">Left Stanford to start <a href="https://www.nyrorobotics.com/">Nyro Robotics</a> and develop whole body control and realtime feedback for telepresence in humanoid robots, joined <a href="https://www.southparkcommons.com/founder-fellowship">South Park Commons Founder Fellowship FF25</a> ($400k @ 5% + $600k Uncapped MFN)</div>
+  <div class="timeline-content">Left Stanford to start <a href="https://www.nyrorobotics.com/">Nyro Robotics</a> and develop whole body control and realtime feedback for telepresence in humanoid robots, joined <a href="https://www.southparkcommons.com/founder-fellowship">South Park Commons Founder Fellowship FF25</a> ($400k @ 7% + $600k Uncapped MFN)</div>
 </div>
 
 <div class="timeline-entry">
